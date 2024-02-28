@@ -1,0 +1,28 @@
+.clients-container {
+    background-color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .clients-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .clients-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .client-logo {
+    margin: 20px;
+    cursor: pointer; 
+  }
+  
+  .client-logo img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+  }
+  

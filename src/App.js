@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from './components/header';
 import Equipe from './components/equipe.js'
+import Clients from './components/clients.js'
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         </div>
       </div>
       <Equipe /> 
+      <Clients />
     </div>
   );
 }
