@@ -3,7 +3,7 @@ import './App.css';
 import Header from './components/header';
 import Equipe from './components/equipe.js'
 import Clients from './components/clients.js'
-
+import Footer from './components/footer.js'
 
 function App() {
   return (
@@ -31,6 +31,7 @@ function App() {
       </div>
       <Equipe /> 
       <Clients />
+      <Footer />
     </div>
   );
 }
