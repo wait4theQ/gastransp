@@ -1,12 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './header.css';
 
 
 const logoImage = require('../img/logo1.png');
 
-function Header() {
+const Header = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 100; 
+      setScrolled(isScrolled);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="header">
+    <header className={`header ${scrolled ? 'scrolled' : ''}`}>
       <div className="logo-container">
         
         <img src={logoImage} alt="Logo" className="logo" />
@@ -20,6 +35,6 @@ function Header() {
       </nav>
     </header>
   );
-}
+};
 
 export default Header;
