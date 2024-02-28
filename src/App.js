@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from './components/header';
+import Equipe from './components/equipe.js'
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Equipe /> 
     </div>
   );
 }

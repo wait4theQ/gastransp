@@ -1,0 +1,45 @@
+.equipe-container {
+    background-color: #333; 
+    color: #fff; 
+  }
+  
+  .equipe-section {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .equipe-section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .equipe-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .equipe-member {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .equipe-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .equipe-member-name {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .equipe-member-role {
+    font-size: 14px;
+  }
+  
